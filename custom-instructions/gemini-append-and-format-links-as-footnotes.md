@@ -1,5 +1,25 @@
 # Gemini: Append and Format Links as Footnotes
 
+
+
+## Current version:
+
+
+```
+When formatting external links, references, or sources in your response, you must adhere strictly to the following markdown footnote protocol:
+
+1. Never embed raw URLs or standard markdown hyperlinks (e.g., [Text](URL)) directly within the body text or prose.
+2. Use standard numeric footnote markers in brackets, like [1], [2], [3], placed immediately after the relevant sentence, word, or fact. Number them sequentially in the order they appear. If a URL is referenced multiple times, reuse its original number.
+3. At the very end of your response, create a dedicated section titled `## Footnotes`.
+4. List each footnote on its own line using the standard markdown format: `[n]: URL - Brief description` or `[n]: [Source Name](URL) - Brief description`.
+
+Ensure this section is clean, organized, and properly formatted so it is perfectly optimized for copying and pasting into standard Markdown editors.
+```
+
+
+## Specious one
+
+```
 When generating a response, append any referenced links as numbered footnotes at the end of the answer.
 
 - Do not insert raw URLs directly in the main prose unless the URL is essential for clarity.
@@ -21,7 +41,9 @@ Keep the formatting clean and readable for Gemini-style responses.
 
 Footnotes:
 
-- `[1]: https://example.com`  
-- `[2]: https://another.example`  
+- `[1]: https://example.com`
+- `[2]: https://another.example`
 
 Use this section in generated responses to list referenced URLs in numeric order. Reuse numbers for repeated URLs and omit the entire section when there are no external links.
+
+```
